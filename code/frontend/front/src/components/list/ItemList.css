@@ -1,0 +1,70 @@
+.ItemList ul {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: auto;
+  overflow-y: scroll; 
+
+
+}
+
+.ItemList li {
+
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+.ItemList ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 5px;
+
+}
+.ItemList ul li {
+  position: relative;
+  background-image: url("/public/book.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 30px 30px;
+  padding-left: 20px;
+}
+.ItemList ul li {
+  position: relative;
+}
+
+.ItemList ul li:hover {
+  box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.ItemList ul li:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 100%; 
+  left: 0; 
+  transform: translateY(-62px); 
+  background-color: #ccc;
+  margin-left: 5px;
+  color: #333;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: pre-line; 
+  word-wrap: break-word; 
+  max-width: 200px; 
+  z-index: 9999999;
+}
+
+.ItemList .scrolling-container {
+  border-radius: 10px;
+  max-height: 460px; 
+  overflow-y: auto;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+

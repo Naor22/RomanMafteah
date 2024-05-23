@@ -1,0 +1,9 @@
+.idea
+.env
+node_modules
+**/venv
+**/__pycache__
+.DS_Store
+
+build/releases/
+code/backend/core/.env
